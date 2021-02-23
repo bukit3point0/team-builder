@@ -5,7 +5,7 @@ const Teammates = [
         id: uuid(),
         person: "Connie",
         email: "bukit3point0@gmail.com",
-        role: "Over this shit"
+        role: "Crazy Cat"
     },
     {
         id: uuid(),
