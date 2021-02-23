@@ -4,27 +4,51 @@ const Teammates = [
     {
         id: uuid(),
         person: "Connie",
-        email: "bukit3point0@gmail.com",
-        role: "Crazy Cat"
+        email: "connie@dorksquad.com",
+        role: "Warlock"
     },
     {
         id: uuid(),
-        person: "Cody",
-        email: "codyethanjordan@gmail.com",
+        person: "Weston",
+        email: "weston@dorksquad.com",
         role: "Dungeon Master"
     },
     {
         id: uuid(),
-        person: "Adam",
-        email: "adamdadi@gmail.com",
-        role: "Future Weeb"
+        person: "Jonathan",
+        email: "jonathan@dorksquad.com",
+        role: "Ranger"
     },
     {
         id: uuid(),
-        person: "Bryan",
-        email: "bdiaz12345@gmail.com",
-        role: "Sage Mage"
-    }
+        person: "James",
+        email: "james@dorksquad.com",
+        role: "Druid"
+    },
+    {
+        id: uuid(),
+        person: "Vince",
+        email: "vince@dorksquad.com",
+        role: "Cleric"
+    },
+    {
+        id: uuid(),
+        person: "Ismael",
+        email: "ismael@dorksquad.com",
+        role: "Bard"
+    },
+    {
+        id: uuid(),
+        person: "Chad",
+        email: "chad@dorksquad.com",
+        role: "Monk"
+    },
+    {
+        id: uuid(),
+        person: "Mike",
+        email: "mike@dorksquad.com",
+        role: "Dungeon Master"
+    },
 ]
 
 export default {

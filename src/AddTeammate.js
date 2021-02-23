@@ -12,14 +12,14 @@ const Box = styled.form`
 
 const Create = styled.h1``
 const Category = styled.div``
-const Instruction = styled.p``
+const Instruction = styled.label``
 const AddButton = styled.button`
     font-size: 2rem;
     margin-top: 2%;
 `
 
 const Name = styled.input``
-const Role = styled.input``
+const Role = styled.select``
 const Email = styled.input``
 
 const initial = {
@@ -42,7 +42,7 @@ const AddTeammate = () => {
 
         const newTeammate = {
             person: form.person.trim(),
-            role: form.role.trim(),
+            role: form.role,
             email: form.email.trim()
         }
 
@@ -101,12 +101,59 @@ const AddTeammate = () => {
             <Category>
                 <Instruction>Role:</Instruction>
                 <Role
-                    type="text"
                     name="role"
                     value={teammates.role}
                     onChange={onChange}
-                    placeholder="Role"
-                    />
+                >
+                       <option value="">
+                            -- Choose Your Path --
+                        </option>
+                        <option value="Barbarian">
+                            Barbarian
+                        </option>
+                        <option value="Bard">
+                            Bard
+                        </option>
+                        <option value="Cleric">
+                            Cleric
+                        </option> 
+                        <option value="Druid">
+                            Druid
+                        </option>
+                        <option value="Fighter">
+                            Fighter
+                        </option>
+                        <option value="Monk">
+                            Monk
+                        </option>
+                        <option value="Paladin">
+                            Paladin
+                        </option>
+                        <option value="Ranger">
+                            Ranger
+                        </option>
+                        <option value="Rogue">
+                            Rogue
+                        </option>
+                        <option value="Sorceror">
+                            Sorceror
+                        </option>
+                        <option value="Warlock">
+                            Warlock
+                        </option>
+                        <option value="Wizard">
+                            Wizard
+                        </option>
+                        <option value="Artificer">
+                            Artificer
+                        </option>
+                        <option value="Blood Hunter">
+                            Blood Hunter
+                        </option>
+                        <option value="// Dungeon Master //">
+                            // Dungeon Master //
+                        </option>
+                </Role>
             </Category>
             <Category>
                 <Instruction>Email Address:</Instruction>
