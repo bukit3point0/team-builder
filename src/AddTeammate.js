@@ -47,7 +47,7 @@ const AddTeammate = () => {
         }
 
         if(!newTeammate.person  || !newTeammate.role || !newTeammate.email ) {
-            return
+            return;
         }
 
         axios.post("teamdorksquad.com", newTeammate)
@@ -58,6 +58,7 @@ const AddTeammate = () => {
         .catch(err => {
             console.log(`IT'S HECKED ${err}`)
         });
+        // setForm(initial);
     }
 
       
@@ -66,6 +67,7 @@ const AddTeammate = () => {
     axios.get("teamdorksquad.com")
     .then(res => {
         setTeammates(res.data)
+        setForm(initial)
     })
     .catch(err => {
         console.log(`Now you're friendless ${err}`)
@@ -81,6 +83,7 @@ const AddTeammate = () => {
     const onSubmit = event => {
         event.preventDefault()
         submitForm()
+        
     }
 
     return (
@@ -150,7 +153,7 @@ const AddTeammate = () => {
                         <option value="Blood Hunter">
                             Blood Hunter
                         </option>
-                        <option value="// Dungeon Master //">
+                        <option value="Dungeon Master">
                             // Dungeon Master //
                         </option>
                 </Role>
